@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+
+{% for cat, msg in get_flashed_messages(True) %}
+<div class="flash {{cat}}">{{msg}}</div>
+{% endfor %}
+<div id="space">
+</div>
+<div id="space">
+</div>
+<h1>Ошибка 404</h1>
+<h1>Страница не найдена</h1>
+<div id="space">
+</div>
+<div id="space">
+</div>
+
+<div id="space">
+</div>
+
+{% endblock %}

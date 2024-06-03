@@ -1,0 +1,706 @@
+#ul_menu{
+    margin: 0;
+    padding: 0;
+}
+
+#ul_menu li{
+    display: inline;
+    justify-content: left;
+}
+#ul_menu a{
+    display: inline;
+    color: #000;
+    padding: 0;
+    margin: 0;
+    border-right: 1px solid #d7aaaa;
+    background-color: #d7aaaa;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+#ul_menu a:hover {
+    background-color: #555;
+    color: white;
+}
+header{
+    margin: 0;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    /* Чтобы занимал оставшееся пространство */
+    flex-grow: 1;
+    background: red;
+} 
+footer {
+    flex-shrink: 0;
+    background-color: #d7aaaa;
+    color: #000;
+}
+#compilation{
+    background-color: #d7aaaa;
+}
+#compilation1{
+    background-color: #f0eadd;
+}
+#compilation2{
+    background-color: #d29b85;
+}
+#compilation3{
+    background-color: #5b9381;
+}
+#roses{
+    background-image: url("/static/images/roses.jpg");
+    background-size: cover;
+}
+#health{
+    background-image: url("/static/images/health.jpg");
+    background-size: cover;
+}
+#tests{
+    background-image: url("/static/images/tests.jpg");
+    background-size: cover;
+}
+#psychologie{
+    background-image: url("/static/images/psychologie.png");
+    background-size: cover;
+}
+#zebras{
+    background-image: url("/static/images/ZebraBG.jpg");
+    background-size: cover;
+}
+#longreads{
+    background-image: url("/static/images/longreads.jpg");
+    background-size: cover;
+}
+#udmCitiesHead{
+    background-image: linear-gradient(rgba(130, 130, 130, 0.7), rgba(0, 0, 0, 0.8)), url("/static/images/udmCities.jpg");
+    background-size: cover;
+}
+#zebras1{
+    background-image:linear-gradient(rgba(130, 130, 130, 0.7), rgba(0, 0, 0, 0.8)), url("/static/images/zebra.jpg");
+    background-size: cover;
+    color: #fff;
+
+}
+#women_products{
+    background-image: url("/static/images/1801c1_no_logo_no_te.jpg");
+    background-size: cover;
+}
+#logo{
+    display: flex;
+    justify-content: center 
+}
+#linearObjects{
+    display: flex;
+    justify-content: center 
+}
+
+#linearObjects a{
+    display: inline;
+    margin: 10px;
+}
+#linearObjects a:hover > .overlay {
+    color:#555
+}
+#carWoman{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/carWoman.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#carWoman:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#carWoman h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#udmCities{
+    width: 450px;
+    height: 300px;
+    background: url("/static/images/udmCities.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#udmStreets{
+    width: 450px;
+    height: 300px;
+    background: url("/static/images/udmStreets.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#ambulance{
+    width: 450px;
+    height: 300px;
+    background: url("/static/images/ambulance.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#abhazia1{
+    width: 450px;
+    height: 300px;
+    background: url("/static/images/abhazia.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#sport1{
+    width: 450px;
+    height: 300px;
+    background: url("/static/images/sport.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#devil{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/devil.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#devil:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#devil h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#sex{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/sex.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#sex:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#sex h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#abhazia{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/abhazia.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#abhazia:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#abhazia h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#sport{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/sport.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#sport:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#sport h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#zebra{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/zebra.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#zebra:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#zebra h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#loveself{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/loveself.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#loveself:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#loveself h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#products{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/products.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#products:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#products h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#dieta{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/dieta.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#dieta:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#dieta h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#test1{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/test1.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#test1:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#test1 h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#test2{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/test2.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#test2:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#test2 h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#test3{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/test3.png") center;
+    background-size: cover;
+    margin: 10px;
+}
+#test3:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#test3 h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#test4{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/test4.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#test4:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#test4 h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#test5{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/test5.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#test5:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#test5 h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#test6{
+    width: 300px;
+    height: 450px;
+    background: url("/static/images/test6.jpg") center;
+    background-size: cover;
+    margin: 10px;
+}
+#test6:hover #hiddenText{
+    opacity: 1;
+    background-color: #55555570;
+    background-size: contain
+}
+#test6 h4, p {
+    font-size: 28px;
+    display: flex;
+    align-items: flex-end;
+    color:#fff;
+}
+#roses h1{
+    float:right;
+    text-align: center;
+    font-size: 60px;
+    color:#fff
+}
+#roses h5{
+    font-size: 24px;
+    color:#fff
+}
+#roses h3{
+    color:#000
+}
+#catalogue{
+    float: right;
+}
+#health{
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+}
+#tests{
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+}
+#psychologie{
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+}
+#zebras{
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+}
+#longreads{
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+}
+#udmCitiesHead{
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+}
+#zebras1{
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+}
+#women_products{
+    display: flex;
+    justify-content: center;
+    height: 1200px;
+}
+#nameTag1{
+    font-size: 60px;
+    width: 1000px;
+}
+#nameTag2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+#nameTag3{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+#nameTag1white{
+    font-size: 60px;
+    width: 1000px;
+    color: #fff;
+}
+#nameTag2white{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+#nameTag3white{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+}
+#paraBlock{
+    display: flex;
+    justify-content: center;
+}
+#yellowText{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    width: 1200px;
+    background: linear-gradient(
+        to right,
+        white,
+        yellow,
+        white
+      );;
+}
+#greenText{
+    display:flex;
+    justify-content:center;
+    width: 1000px;
+    background-color: #009966;
+}
+
+span{
+    color:#fff;
+    font-size: 40px;
+    text-align: left;
+    padding: 100px;
+}
+#greyText{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    width: 1200px;
+    background: linear-gradient(
+        to right,
+        white,
+        rgb(227, 226, 226),
+        white
+      );;
+}
+#yellowText p{
+    text-align: left;
+    font-size: 40px;
+    color: #000;
+}
+#greyText p{
+    text-align: left;
+    font-size: 40px;
+    color: #00000098;
+}
+#yellowText1{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    width: 1200px;
+    background: linear-gradient(
+        to right,
+        white,
+        yellow,
+        white
+      );;
+}
+#yellowText1 p{
+    text-align: left;
+    font-size: 30px;
+    color: #000;
+}
+.picture{
+    display: block;
+}
+.picture + p{
+    text-align: center;
+    font-size: 30px;
+    color: #000;
+}
+#state p{
+    text-align: left;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 300px;
+    padding-right: 300px;
+    color: #000;
+}
+#state h3{
+    text-align: left;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-left: 300px;
+    padding-right: 300px;
+    color: #000;
+}
+#state h2{
+    text-align: right;
+    font-size: 40px;
+    padding-top: 15px;
+    padding-left: 300px;
+    padding-right: 300px;
+    color: #000;
+}
+#state h4{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 600px;
+    padding-right: 600px;
+    color: #fff;
+}
+#picture-right img{
+    float: right;
+    padding-right: 260px;
+    width: 400px;
+    height: 300px;
+}
+#picture-left img{
+    float: left;
+    padding-left: 260px;
+    width: 400px;
+    height: 300px;
+}
+#picture-left p{
+    text-align: left;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 100px;
+    padding-right: 300px;
+    color: #000;
+}
+
+#picture-right p{
+    text-align: left;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 300px;
+    padding-right: 100px;
+    color: #000;
+}
+
+#textWindow{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 1200px;
+    background-color: #a7a7a79b;
+}
+#space{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+
+}
+#circle{
+    line-height: 150px;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    background-color: #d7aaaa87;
+    box-sizing: border-box;
+    -moz-border-radius: 250px;
+    -webkit-border-radius: 250px;
+    border-radius: 250px;
+}
+#textBlock{
+    background-color: #d7aaaa87;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px;
+    padding: 8px;
+}
+#hiddenText{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.textcols {
+	white-space: nowrap;
+}
+.textcols-item {
+	white-space: normal;	
+	display: inline-block;
+	width: 48%;
+    box-sizing: border-box;
+	vertical-align: top;
+}
+.textcols .textcols-item:first-child {
+    margin: 0 auto;
+}
+#siteTitle{
+    background-color: #d7aaaa;
+}
+h1{
+    font-size: 48px;
+    width:500px;
+    margin: 0 auto;
+    text-align: center;
+}
+#youtube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#graph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

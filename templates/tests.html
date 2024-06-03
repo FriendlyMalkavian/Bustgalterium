@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet"/>
+{% block title -%}
+{% if title -%}
+        <title>Бюстгальтериум - {{title}}</title>
+{% else -%}
+        <title>Бюстгальтериум</title>
+{% endif -%}     
+{% endblock -%}        
+</head>
+<header>
+<div id="siteTitle">
+<div id="logo" >
+<img id="logo" src="/static/images/title.png" width="100" height="50" alt="">
+</div>
+</div>        
+{% block content -%}
+        {% block mainmenu -%}
+<ul class="mainmenu" id="ul_menu">
+        {% for m in menu -%}
+<li><a href="{{m.url}}">{{m.title}}</a></li>
+        {% endfor -%}
+</ul>
+        {% endblock mainmenu -%}
+<div class="clear"></div>
+</header>
+<div id="tests">
+   
+    <div id="healthtitle">
+        <div id="space">
+        </div>
+        <h2 id="nameTag2">Бюстгальтериум</h2>
+        <div id="space">
+        </div>
+        <h1 id="nameTag1">Тесты</h1>
+        <div id="space">
+        </div>
+        <div id = "textWindow"><p>Мы предлагаем вам увлекательные интерактивные тесты,
+             которые помогут читателям проверить свои знания в разных областях, таких как мода,
+              красота отношения и психология и многих других. Тесты разработаны с учетом интересов 
+              женской аудитории и направлены на развитие личности, самопознание и развлечение.</p>
+        </div>
+        <div id="space">
+        </div>
+    </div>
+    
+</div>
+
+
+<div id = compilation1>
+        <p></p>
+       <div id="linearObjects">
+        <div id="test1">
+                <a href="test1" id="devil"><div id="hiddenText">
+                        <h4>Насколько хорошо вы разбираетесь в женском движении?</h4>
+                        </div> </a>
+        </div>
+        <div id="test2">
+                <a href="/test2" id="sex"><div id="hiddenText">
+                        <h4>Счастливы ли вы в отношениях?</h4>
+                        </div> </a>
+        </div>
+        <div id="test3">
+            <a href="/test3" id="sex"><div id="hiddenText">
+                    <h4>Женщины правят миром?!</h4>
+                    </div> </a>
+    </div>
+       </div>
+       <div id="linearObjects">
+        <div id="test4">
+                <a href="/test4" id="devil"><div id="hiddenText">
+                        <h4>Исторические факты о бюстгальтере</h4>
+                        </div> </a>
+        </div>
+        <div id="test5">
+                <a href="/test5" id="sex"><div id="hiddenText">
+                        <h4>Я надену этот бюстгальтер в...</h4>
+                        </div> </a>
+        </div>
+        <div id="test6">
+            <a href="/test6" id="sex"><div id="hiddenText">
+                    <h4>8 марта</h4>
+                    </div> </a>
+    </div>
+       </div>
+       <p></p>
+
+</div>
+{% endblock -%} 
+<div>
+    <p></p>
+</div>
+
+{% block footer -%}
+<footer>
+        <div class="textcols">
+                <div class="textcols-item" style="text-align: left; padding-left:200px">
+                        <h2>Бюстгальтериум</h2>
+                        <a href="https://t.me/bustgalteriym">t.me/bustgalteriym</a>
+                </div>
+                <div class="textcols-item"style="text-align: left; padding-left:200px">
+                        <p>Наши контакты:</p>
+                        <p>+79827942449</p>
+                        <p>olgabeznosova2@gmail.com</p>
+                        <p>Ижевск, ул. Университетская 1,</p>
+                        <p>2 этаж, офис 223</p>
+                </div>
+        </div>
+</footer>
+{% endblock -%} 
+</html>

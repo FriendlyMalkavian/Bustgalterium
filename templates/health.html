@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet"/>
+{% block title -%}
+{% if title -%}
+        <title>Бюстгальтериум - {{title}}</title>
+{% else -%}
+        <title>Бюстгальтериум</title>
+{% endif -%}     
+{% endblock -%}        
+</head>
+<header>
+<div id="siteTitle">
+<div id="logo" >
+<img id="logo" src="/static/images/title.png" width="100" height="50" alt="">
+</div>
+</div>        
+{% block content -%}
+        {% block mainmenu -%}
+<ul class="mainmenu" id="ul_menu">
+        {% for m in menu -%}
+<li><a href="{{m.url}}">{{m.title}}</a></li>
+        {% endfor -%}
+</ul>
+        {% endblock mainmenu -%}
+<div class="clear"></div>
+</header>
+<div id="health">
+   
+    <div id="healthtitle">
+        <div id="space">
+        </div>
+        <h2 id="nameTag2">Бюстгальтериум</h2>
+        <div id="space">
+        </div>
+        <h1 id="nameTag1">ЗДОРОВЬЕ</h1>
+        <div id="space">
+        </div>
+        <div id = "textWindow"><p>Здоровье – это основа нашего благополучия и счастья. В этом разделе мы будем делиться полезными советами и проверенными методами для 
+            поддержания здоровья. Мы поговорим о правильном питании, физической активности и женских болячках. Здесь вы найдете ответы на важные вопросы и 
+            узнаете, как заботиться о себе каждый день! Давайте вместе делать нашу жизнь и здоровье лучше!</p>
+        </div>
+        <div id="space">
+        </div>
+    </div>
+    
+</div>
+
+
+<div id = compilation1>
+        <p></p>
+       <div id="linearObjects">
+        <div id="products">
+                <a href="/women_products" id="devil"><div id="hiddenText">
+                        <h4>Продукты для женской красоты, молодости и здоровья</h4>
+                        <p>Анна Хохрякова</p>
+                        </div> </a>
+        </div>
+        <div id="dieta">
+                <a href="/dietas" id="sex"><div id="hiddenText">
+                        <h4>Поговорим о диетах... А точнее, об их вреде</h4>
+                        <p>Марина Орехова</p>
+                        </div> </a>
+        </div>
+       </div>
+       <p></p>
+
+</div>
+{% endblock -%} 
+<div>
+    <p></p>
+</div>
+
+{% block footer -%}
+<footer>
+        <div class="textcols">
+                <div class="textcols-item" style="text-align: left; padding-left:200px">
+                        <h2>Бюстгальтериум</h2>
+                        <a href="https://t.me/bustgalteriym">t.me/bustgalteriym</a>
+                </div>
+                <div class="textcols-item"style="text-align: left; padding-left:200px">
+                        <p>Наши контакты:</p>
+                        <p>+79827942449</p>
+                        <p>olgabeznosova2@gmail.com</p>
+                        <p>Ижевск, ул. Университетская 1,</p>
+                        <p>2 этаж, офис 223</p>
+                </div>
+        </div>
+</footer>
+{% endblock -%} 
+</html>

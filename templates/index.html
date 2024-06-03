@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet"/>
+<link rel="icon" href="/static/images/health.png">
+{% block title -%}
+{% if title -%}
+        <title>Бюстгальтериум - {{title}}</title>
+{% else -%}
+        <title>Бюстгальтериум</title>
+{% endif -%}     
+{% endblock -%}        
+</head>
+<header>
+<div id="siteTitle">
+<div id="logo" >
+<img id="logo" src="/static/images/title.png" width="100" height="50" alt="">
+</div>
+</div>        
+{% block content -%}
+        {% block mainmenu -%}
+<ul class="mainmenu" id="ul_menu">
+        {% for m in menu -%}
+<li><a href="{{m.url}}">{{m.title}}</a></li>
+        {% endfor -%}
+</ul>
+        {% endblock mainmenu -%}
+<div class="clear"></div>
+</header>
+<div id="roses">
+    <div id="catalogue">
+        <h5>Каталог Бюстгальтериума</h5>
+    <div id="textBlock">
+        <h2>TRANSFORMER</h2>
+        <a href="/psycho"><img src="/static/images/psycho.png" width="150" height="150" alt=""></a>
+        <h3>ПСИХОЛОГИЯ</h3>
+    </div>
+    <div id="textBlock">
+        <h2>SOFT CUPS</h2>
+        <a href="/health"><img src="/static/images/health.png" width="150" height="150" alt=""></a>
+        <h3>ЗДОРОВЬЕ</h3>
+    </div>
+    <div id="textBlock">
+        <h2>MOLDED CUPS</h2>
+        <a href="/fashion"><img src="/static/images/fashion.png" width="150" height="150" alt=""></a>
+        <h3>МОДА</h3>
+    </div>
+    
+</div>
+<div id="circle">
+        <h1>Бюстгальтериум</h1>
+        <h2>«Простота — суть элегантности»<br>Софи Лорен</h2>
+    </div>
+
+</div>
+
+<div id = compilation>
+        <p></p>
+       <div id="linearObjects">
+        <div id="devil">
+                <a href="m.url" id="devil"><div id="hiddenText">
+                        <h4>Дъявол в мелочах: одеваемся по асценденту</h4>
+                        <p>Марина Орехова</p>
+                        </div> </a>
+        </div>
+        <div id="sex">
+                <a href="m.url" id="sex"><div id="hiddenText">
+                        <h4>Хочу секс, не хочу секс: как совместить желания партнеров</h4>
+                        <p>Ольга Безносова</p>
+                        </div> </a>
+        </div>
+        <div id="abhazia">
+                <a href="m.url" id="abhazia"><div id="hiddenText">
+                        <h4>Заметки путешественников: Абхазия</h4>
+                        <p>Марина Орехова</p>
+                        </div> </a>
+        </div>
+       </div>
+       <p></p>
+       <div id="linearObjects">
+        <div id="sport">
+                <a href="m.url" id="sport"><div id="hiddenText">
+                        <h4>Профессиональный спорт для детей: здоровье или вред</h4>
+                        <p>Ольга Безносова</p>
+                        </div> </a>
+        </div>
+        <div id="zebra">
+                <a href="zebras" id="zebra"><div id="hiddenText">
+                        <h4>Скачки на зебрах</h4>
+                        <p>Мария Шутова</p>
+                        </div> </a>
+        </div>
+        <div id="carWoman">
+                <a href="m.url" id="carWoman">
+                        <div id="hiddenText">
+                                <h4>Осторожно!Женщина за рулем</h4>
+                                <p>Анна Хохрякова</p>
+                                </div> 
+                </a>
+                
+        </div>
+        </div>
+</div>
+{% endblock -%} 
+<div>
+    <p></p>
+</div>
+
+{% block footer -%}
+<footer>
+        <div class="textcols">
+                <div class="textcols-item" style="text-align: left; padding-left:200px">
+                        <h2>Бюстгальтериум</h2>
+                        <a href="https://t.me/bustgalteriym">t.me/bustgalteriym</a>
+                </div>
+                <div class="textcols-item"style="text-align: left; padding-left:200px">
+                        <p>Наши контакты:</p>
+                        <p>+79827942449</p>
+                        <p>olgabeznosova2@gmail.com</p>
+                        <p>Ижевск, ул. Университетская 1,</p>
+                        <p>2 этаж, офис 223</p>
+                </div>
+        </div>
+</footer>
+{% endblock -%} 
+</html>
